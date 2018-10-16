@@ -11,6 +11,8 @@ import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.dbnaza.commons.HelloActivity;
+
 import java.io.IOException;
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
@@ -160,7 +162,7 @@ public class MainActivity extends AppCompatActivity implements FingerPrintAuthHe
 
     @Override
     public void onSuccessful() {
-        startActivity(new Intent(this, AuthenticatedActivity.class));
+        startActivity(new Intent(this, HelloActivity.class));
     }
 
     @Override
